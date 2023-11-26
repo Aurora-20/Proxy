@@ -1,0 +1,25 @@
+# Charon TV
+DOMAIN-SUFFIX,charontv.com
+
+# Academy City Airport 机场服
+DOMAIN,emby.aca.best
+DOMAIN,pron.aca.best
+
+# PiliPili
+DOMAIN-SUFFIX,pilipiliultra.top
+DOMAIN-SUFFIX,pilipiliultra.com
+
+# TreeDiagiam
+DOMAIN-SUFFIX,123456.al
+
+# Paul 
+DOMAIN-SUFFIX,imetyou.top
+
+# PronEmby
+DOMAIN-SUFFIX,pornemby.club
+
+# Error is Best 
+DOMAIN,red.prisms.cc
+
+# Final 
+USER-AGENT,Emby/1.0.0
