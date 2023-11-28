@@ -12,7 +12,7 @@ DOMAIN-KEYWORD,9.123456.a
 DOMAIN-KEYWORD,.imetyou.t
 
 # PronEmby
-DOMAIN-KEYWORD,.pornemby.c
+DOMAIN-KEYWORD,pornemby.c
 
 # Error is Best 
 DOMAIN,d.prisms.c
@@ -30,6 +30,8 @@ USER-AGENT,yybx*
 USER-AGENT,Emby*
 # Emby 官方客户端
 USER-AGENT,Mozilla*
+# Emby 官方播放器
+# USER-AGENT,libmpv
 # VidHub
 USER-AGENT,VidHub*
 # VidHub 播放器
