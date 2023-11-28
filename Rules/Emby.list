@@ -1,25 +1,33 @@
-# Charon TV
-DOMAIN-SUFFIX,charontv.com
-
 # Academy City Airport 机场服
-DOMAIN,emby.aca.best
-DOMAIN,pron.aca.best
+DOMAIN-KEYWORD,y.aca.b
+DOMAIN-KEYWORD,n.aca.b
 
 # PiliPili
-DOMAIN-SUFFIX,pilipiliultra.top
-DOMAIN-SUFFIX,pilipiliultra.com
+DOMAIN-KEYWORD,pilipiliultra
 
 # TreeDiagiam
-DOMAIN-SUFFIX,123456.al
+DOMAIN-KEYWORD,9.123456.a
 
 # Paul 
-DOMAIN-SUFFIX,imetyou.top
+DOMAIN-KEYWORD,.imetyou.t
 
 # PronEmby
-DOMAIN-SUFFIX,pornemby.club
+DOMAIN-KEYWORD,pornemby.c
 
 # Error is Best 
-DOMAIN,red.prisms.cc
+DOMAIN,d.prisms.c
 
-# Final 
-USER-AGENT,Emby/1.0.0
+#  主要是处理 HTTP 请求
+# Fileball
+USER-AGENT,Fileball*
+# Fileball Mpv 播放器
+USER-AGENT,libmpv
+# Fileball VLC 播放器
+USER-AGENT,LibVLC*
+# yybx
+USER-AGENT,yybx*
+# yybx 播放器
+USER-AGENT,Emby*
+# Emby 官方客户端
+USER-AGENT,Mozilla*
+
