@@ -3,7 +3,7 @@ DOMAIN-KEYWORD,y.aca.b
 DOMAIN-KEYWORD,n.aca.b
 
 # PiliPili
-DOMAIN-KEYWORD,pilipiliultra
+DOMAIN-KEYWORD,.pilipiliultra.
 
 # TreeDiagiam
 DOMAIN-KEYWORD,9.123456.a
@@ -12,7 +12,7 @@ DOMAIN-KEYWORD,9.123456.a
 DOMAIN-KEYWORD,.imetyou.t
 
 # PronEmby
-DOMAIN-KEYWORD,pornemby.c
+DOMAIN-KEYWORD,.pornemby.c
 
 # Error is Best 
 DOMAIN,d.prisms.c
@@ -30,4 +30,6 @@ USER-AGENT,yybx*
 USER-AGENT,Emby*
 # Emby 官方客户端
 USER-AGENT,Mozilla*
+# VidHub
+USER-AGENT,VidHub*
 
