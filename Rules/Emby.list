@@ -17,7 +17,7 @@ DOMAIN-KEYWORD,pornemby.c
 # Error is Best 
 DOMAIN,d.prisms.c
 
-#  主要是处理 HTTP 请求
+# 主要是处理 HTTP 请求
 # Fileball
 USER-AGENT,Fileball*
 # Fileball Mpv 播放器
