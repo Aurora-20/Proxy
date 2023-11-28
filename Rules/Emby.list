@@ -32,4 +32,6 @@ USER-AGENT,Emby*
 USER-AGENT,Mozilla*
 # VidHub
 USER-AGENT,VidHub*
+# VidHub 播放器
+USER-AGENT,Lavf*
 
