@@ -20,7 +20,7 @@ DOMAIN-KEYWORD,d.prisms.c
 # 主要是处理 HTTP 请求
 # Fileball
 USER-AGENT,Fileball*
-# Fileball Mpv 播放器
+# Fileball Mpv、Emby 播放器
 USER-AGENT,libmpv
 # Fileball VLC 播放器
 USER-AGENT,LibVLC*
@@ -28,10 +28,6 @@ USER-AGENT,LibVLC*
 USER-AGENT,yybx*
 # yybx 播放器
 USER-AGENT,Emby*
-# Emby 官方客户端
-USER-AGENT,Mozilla*
-# Emby 官方播放器
-# USER-AGENT,libmpv
 # VidHub
 USER-AGENT,VidHub*
 # VidHub 播放器
