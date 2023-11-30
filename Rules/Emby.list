@@ -32,4 +32,6 @@ USER-AGENT,Emby*
 USER-AGENT,VidHub*
 # VidHub 播放器
 USER-AGENT,Lavf*
+# Infuse (注：播放时没有User-Agent 请求头)
+USER-AGENT,Infuse*
 
