@@ -11,11 +11,15 @@ DOMAIN-KEYWORD,9.123456.a
 # Paul 
 DOMAIN-KEYWORD,imetyou.t
 
-# PronEmby
+# PornEmby
 DOMAIN-KEYWORD,pornemby.c
 
 # Error is Best 
 DOMAIN-KEYWORD,d.prisms.c
+
+# CCEmby
+DOMAIN-KEYWORD,ccemby.t
+DOMAIN-KEYWORD,carryz.n
 
 # 主要是处理 HTTP 请求
 # Fileball
