@@ -3,121 +3,9 @@
  *
  * 1. 功能：为 SYN 已订阅用户快速在 SubStore 中添加低倍率节点；
  * 2. 请在 SubStore 中使用，具体使用：编辑->脚本操作->类型（链接）->
- * 填入本脚本链接（）；
+ * 填入本脚本链接（https://raw.githubusercontent.com/Aurora-20/Proxy/main/Scripts/SubStore/SYNNodes.js）；
  *
  */
-const proxies = [
-  {
-    name: "🇭🇰 HK 乙酰氨基酚 S",
-    type: "ss",
-    server: "traffic-in-a.811920.xyz",
-    port: 50001,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇭🇰 HK 次硝酸甘油 S",
-    type: "ss",
-    server: "traffic-in-a.811920.xyz",
-    port: 50002,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇹🇼 TW 甲基苯丙酮 S",
-    type: "ss",
-    server: "traffic-in-a.811920.xyz",
-    port: 50010,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇹🇼 TW 双氯芬酸钠 S",
-    type: "ss",
-    server: "traffic-in-a.811920.xyz",
-    port: 50011,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇯🇵 JP 盐酸氨溴索 S",
-    type: "ss",
-    server: "traffic-in-ja.811920.xyz",
-    port: 50003,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇯🇵 JP 磷酸肌酸钠 S",
-    type: "ss",
-    server: "traffic-in-ja.811920.xyz",
-    port: 50004,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇸🇬 SG 羟苯磺酸钠 S",
-    type: "ss",
-    server: "traffic-in-01.811920.xyz",
-    port: 50005,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇸🇬 SG 氨基酮戊酸 S",
-    type: "ss",
-    server: "traffic-in-01.811920.xyz",
-    port: 50006,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇺🇸 US 盐酸可待因 S",
-    type: "ss",
-    server: "traffic-in-01.811920.xyz",
-    port: 50007,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "🇺🇸 US 磺胺甲恶唑 S",
-    type: "ss",
-    server: "traffic-in-01.811920.xyz",
-    port: 50008,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-  {
-    name: "📽️ SP 四氟硼酸铜",
-    type: "ss",
-    server: "traffic-in-lite.811920.xyz",
-    port: 50015,
-    cipher: "aes-128-gcm",
-    password: "e44fa4bf-9dd0-431c-828a-d2574d99793e",
-    udp: true,
-    subName: "Test",
-  },
-];
 
 function operator(proxies) {
   /**
@@ -182,6 +70,3 @@ function operator(proxies) {
   );
   return proxies;
 }
-
-const result = operator(proxies);
-console.log(result);
