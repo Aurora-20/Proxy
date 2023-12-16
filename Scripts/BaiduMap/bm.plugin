@@ -1,0 +1,22 @@
+#!name=Baidu Map
+#!desc=百度地图净化
+#!icon=https://s2.loli.net/2023/12/16/rMpn1YTQcevCPKN.png
+
+[MITM]
+
+hostname = 180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
+
+[URL Rewrite]
+
+# > 百度地图_首页底部推荐
+^https?:\/\/ugc\.map\.baidu\.com\/govui\/rich_content reject-dict
+# > 百度地图_搜索推广
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw reject-dict
+# > 百度地图_开屏广告|首页左上角广告
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads reject-dict
+# > 百度地图_DNS处理
+^https?:\/\/httpdns\.baidubce\.com reject-dict
+# > 百度地图_各种商业推广
+^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing reject-dict
+# > 百度地图_我的页面地图动态
+^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic reject-dict
