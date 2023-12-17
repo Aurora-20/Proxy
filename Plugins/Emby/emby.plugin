@@ -1,0 +1,19 @@
+#!name=Emby Plugin
+#!desc=Emby 调用外部播放器
+#!icon=https://s2.loli.net/2023/12/17/hS1Cy6gXxw8m5Ib.png
+
+[MITM]
+
+hostname = mb3admin.com, stream.synn.cc, ntrrr.am.sb
+
+[Script]
+
+http-response ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/unlock.js, requires-body=true, tag=播放解锁
+
+http-response \/[Uu]sers\/\w{32}\/[Ii]tems\/\d+\?? script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/emby-plugin.js, requires-body=true, tag=添加外部播放器连接
+
+http-response \/plugin\/scheme script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/emby-plugin.js, tag=打开外部播放器
+
+http-request (\/[Vv]ideos\/\d+\/stream\/.+\?.+&filename)|(\/[Vv]ideos\/\d+\/\w{32}\/[Ss]ubtitles\/\d+\/.+\?.+&filename) script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/emby-plugin.js, tag=资源路径伪静态
+
+http-response (\/[Vv]ideos\/\d+\/stream\?.+&filename)|(\/[Vv]ideos\/\d+\/\w{32}\/[Ss]ubtitles\/.+&filename) script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/download_file_rename.js, requires-body=false, tag=下载文件重命名
