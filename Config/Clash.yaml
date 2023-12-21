@@ -67,7 +67,7 @@ p:
     health-check:
       {
         enable: true,
-        url: http://www.apple.com/library/test/success.html,
+        url: https://www.apple.com/library/test/success.html,
         interval: 300,
       },
   }
@@ -75,11 +75,19 @@ auto:
   &auto {
     type: url-test,
     lazy: true,
-    url: http://www.apple.com/library/test/success.html,
+    url: https://www.apple.com/library/test/success.html,
     interval: 600,
     use: [Subscribe],
   }
 use: &use { type: select, use: [Subscribe] }
+load-balance:
+  &load-balance {
+    type: load-balance,
+    use: [Subscribe],
+    url: https://www.apple.com/library/test/success.html,
+    interval: 600,
+    strategy: round-robin,
+  }
 c: &classical { type: http, behavior: classical, interval: 86400 }
 d: &domain { type: http, behavior: domain, interval: 86400 }
 i: &ipcidr { type: http, behavior: ipcidr, interval: 86400 }
@@ -104,6 +112,7 @@ proxy-groups:
       filter: "(?i)美|unitedstates|united states",
     },
     { name: 🇸🇬 Singapore, <<: *auto, filter: "(?i)(新|sg|singapore)" },
+    { name: 🔮 Load Balance, <<: *auto, filter: "^V|E" },
   ]
 rule-providers:
   Downloads:
@@ -124,9 +133,16 @@ rule-providers:
       url: https://raw.tuu.cat/Aurora-20/Proxy/main/Rules/Clash/Emby/Emby.yaml,
       path: ./ruleset/Emby.yaml,
     }
+  DMCA:
+    {
+      <<: *classical,
+      url: https://raw.tuu.cat/Aurora-20/Proxy/main/Rules/Clash/DMCA/DMCA.yaml,
+      path: ./ruleset/DMCA.yaml,
+    }
 rules:
   - GEOIP,CN,DIRECT
   - RULE-SET,Telegram,🇸🇬 Singapore
   - RULE-SET,Downloads,⏬ Downloads
   - RULE-SET,Emby,⏬ Downloads
+  - RULE-SET,DMCA,🔮 Load Balance
   - MATCH,🚀 Default
