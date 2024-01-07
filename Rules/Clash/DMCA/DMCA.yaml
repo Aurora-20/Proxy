@@ -1,5 +1,8 @@
 payload:
   - DOMAIN-SUFFIX,chinadigitaltimes.net
+  - IP-CIDR,172.67.25.190/32,no-resolve
+  - IP-CIDR,104.22.42.172/32,no-resolve
+  - IP-CIDR,104.22.43.172/32,no-resolve
   - DOMAIN-SUFFIX,rfa.org
   - DOMAIN-SUFFIX,pincong.rocks
   - DOMAIN-SUFFIX,rfi.fr
