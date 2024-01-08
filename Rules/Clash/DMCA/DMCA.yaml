@@ -4,7 +4,11 @@ payload:
   - IP-CIDR,104.22.42.172/32,no-resolve
   - IP-CIDR,104.22.43.172/32,no-resolve
   - DOMAIN-SUFFIX,rfa.org
+  - IP-CIDR,23.203.213.141/32,no-resolve
   - DOMAIN-SUFFIX,pincong.rocks
+  - IP-CIDR,104.22.32.251/32,no-resolve
+  - IP-CIDR,172.67.27.93/32,no-resolve
+  - IP-CIDR,104.22.33.251/32,no-resolve
   - DOMAIN-SUFFIX,rfi.fr
   - DOMAIN-SUFFIX,voachinese.com
   - DOMAIN-SUFFIX,nytimes.com
