@@ -45,8 +45,8 @@ function replace_name(node_name) {
     tr: new RegExp(/TR(\s\d+.*$)/i),
   };
   const number_regexp = {
-    first: new RegExp(/(\d{2})/),
-    second: new RegExp(/(\d{1})/),
+    first: new RegExp(/(\d{2}\s.*)/),
+    second: new RegExp(/(\d{1}\s.*)/),
   };
 
   const countries_code = Object.keys(countries_regexp);
