@@ -1,5 +1,5 @@
 function operator(proxies) {
-  const other = /-\(.+\)$|---|消耗/g;
+  const other = /\(.+\)$|---|消耗/g;
   const hk = /香港|HK/;
   const sg = /新加坡|SG/;
   const us = /美国|US/;
