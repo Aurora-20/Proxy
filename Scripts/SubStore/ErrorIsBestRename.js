@@ -47,18 +47,7 @@ function replace_name(node_name) {
     tr: new RegExp(/TR\s?(\d+.*$)/i),
   };
 
-  // const number_regexp = {
-  //   first: new RegExp(/(\d{2}\s.*)/),
-  //   second: new RegExp(/(\d{1}\s.*)/),
-  // };
-
   const countries_code = Object.keys(countries_regexp);
-
-  // if (number_regexp["first"].test(node_name)) {
-  //   node_name = node_name.replace(number_regexp["first"], " $1");
-  // } else if (number_regexp["second"].test(node_name)) {
-  //   node_name = node_name.replace(number_regexp["second"], " 0$1");
-  // }
 
   countries_code.forEach((code) => {
     if (code === "tw") {
