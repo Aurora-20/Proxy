@@ -72,6 +72,3 @@ function replace_name(node_name) {
   });
   return node_name;
 }
-
-const name = "🇲🇾 Malaysia1";
-console.log(replace_name(name));
