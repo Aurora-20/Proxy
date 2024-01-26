@@ -45,8 +45,8 @@ function replace_name(node_name) {
     tr: new RegExp(/TR(\s\d+.*$)/i),
   };
   const number_regexp = {
-    first: new RegExp(/(\d{2}\s.*)/),
-    second: new RegExp(/(\d{1}\s.*)/),
+    first: new RegExp(/(\d{2}\s?[^x].*)/),
+    second: new RegExp(/(\d{1})\s?[^x].*/),
   };
 
   const countries_code = Object.keys(countries_regexp);
@@ -72,3 +72,6 @@ function replace_name(node_name) {
   });
   return node_name;
 }
+
+const name = "🇲🇾 Malaysia1";
+console.log(replace_name(name));
