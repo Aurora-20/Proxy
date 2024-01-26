@@ -34,17 +34,17 @@ function replace_name(node_name) {
     tr: "Turkey",
   };
   const countries_regexp = {
-    hk: new RegExp(/香港|HK\s?(\d+.*$)/i),
-    sg: new RegExp(/新加坡|SG\s?(\d+.*$)/i),
-    tw: new RegExp(/台湾|TW\s?(\d+.*$)/i),
-    jp: new RegExp(/日本|JP\s?(\d+.*$)/i),
-    kr: new RegExp(/KR\s?(\d+.*$)/i),
-    us: new RegExp(/美国|US\s?(\d+.*$)/i),
-    ca: new RegExp(/CA\s?(\d+.*$)/i),
-    de: new RegExp(/DE\s?(\d+.*$)/i),
-    uk: new RegExp(/UK\s?(\d+.*$)/i),
-    fr: new RegExp(/FR\s?(\d+.*$)/i),
-    tr: new RegExp(/TR\s?(\d+.*$)/i),
+    hk: new RegExp(/香港|HK\s(\d+.*$)/i),
+    sg: new RegExp(/新加坡|SG\s(\d+.*$)/i),
+    tw: new RegExp(/台湾|TW\s(\d+.*$)/i),
+    jp: new RegExp(/日本|JP\s(\d+.*$)/i),
+    kr: new RegExp(/KR\s(\d+.*$)/i),
+    us: new RegExp(/美国|US\s(\d+.*$)/i),
+    ca: new RegExp(/CA\s(\d+.*$)/i),
+    de: new RegExp(/DE\s(\d+.*$)/i),
+    uk: new RegExp(/UK\s(\d+.*$)/i),
+    fr: new RegExp(/FR\s(\d+.*$)/i),
+    tr: new RegExp(/TR\s(\d+.*$)/i),
   };
   const number_regexp = {
     first: new RegExp(/(\d{2}\s?.*)/),
