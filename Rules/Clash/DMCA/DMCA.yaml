@@ -13,3 +13,6 @@ payload:
   - DOMAIN-SUFFIX,voachinese.com
   - DOMAIN-SUFFIX,nytimes.com
   - DOMAIN-SUFFIX,aboluowang.com
+  - DOMAIN-SUFFIX,epochbase.com
+  - DOMAIN-SUFFIX,epoch.cloud
+  - DOMAIN-SUFFIX,epochtimes.com

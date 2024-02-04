@@ -11,9 +11,15 @@ DOMAIN-SUFFIX,pincong.rocks
 IP-CIDR,104.22.32.251/32,no-resolve
 IP-CIDR,172.67.27.93/32,no-resolve
 IP-CIDR,104.22.33.251/32,no-resolve
+# Voice of America(美国之声)
 DOMAIN-SUFFIX,voachinese.com
+# 法国国际广播电台
 DOMAIN-SUFFIX,rfi.fr
 # 纽约时报
 DOMAIN-SUFFIX,nytimes.com
 # 阿波罗网
 DOMAIN-SUFFIX,aboluowang.com
+# 大纪元
+DOMAIN-SUFFIX,epochbase.com
+DOMAIN-SUFFIX,epoch.cloud
+DOMAIN-SUFFIX,epochtimes.com
