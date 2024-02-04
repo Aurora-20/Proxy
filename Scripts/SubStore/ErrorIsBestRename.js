@@ -42,14 +42,14 @@ function get_node_name(node_name = "") {
 }
 
 function get_node_order(node_name = "") {
-  const one = new RegExp(/\s?(\d{1})[^X].*/i);
-  const two = new RegExp(/\s?(\d{2})[^X].*/i);
+  const one = new RegExp(/\s?(\d{1})-/i);
+  const two = new RegExp(/\s?(\d{2})-/i);
 
   switch (true) {
     case two.test(node_name):
-      return node_name.replace(two, "$1");
+      return node_name.match(two)[0].match(/\d+/)[0];
     case one.test(node_name):
-      return "0" + node_name.replace(one, "$1");
+      return "0" + node_name.match(one)[0].match(/\d+/)[0];
     default:
       return "S";
   }
