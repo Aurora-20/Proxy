@@ -42,8 +42,8 @@ function get_node_name(node_name = "") {
 }
 
 function get_node_order(node_name = "") {
-  const one = new RegExp(/.*(\d{1})[^X].*/i);
-  const two = new RegExp(/.*(\d{2})[^X].*/i);
+  const one = new RegExp(/\s?(\d{1})[^X].*/i);
+  const two = new RegExp(/\s?(\d{2})[^X].*/i);
 
   switch (true) {
     case two.test(node_name):
