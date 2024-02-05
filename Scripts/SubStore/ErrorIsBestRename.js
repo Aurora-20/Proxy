@@ -20,15 +20,15 @@ function filter_node(node_name = "") {
 
 function get_node_name(node_name = "") {
   switch (true) {
-    case /(🇭🇰)?香港|HK|HongKong/i.test(node_name):
+    case /(🇭🇰)?(香港|HK|HongKong)?/i.test(node_name):
       return "🇭🇰 Hong Kong";
-    case /(🇯🇵)?日本|JP|Japan/i.test(node_name):
+    case /(🇯🇵)?(日本|JP|Japan)?/i.test(node_name):
       return "🇯🇵 Japan";
-    case /(🇹🇼|🇨🇳)?台湾|tw|taiwan/i.test(node_name):
+    case /(🇹🇼|🇨🇳)?(台湾|tw|taiwan)?/i.test(node_name):
       return "🇹🇼 Taiwan";
-    case /(🇸🇬)?新加坡|sg|singapore/i.test(node_name):
+    case /(🇸🇬)?(新加坡|sg|singapore)?/i.test(node_name):
       return "🇸🇬 Singapore";
-    case /(🇺🇸)?美国|us/i.test(node_name):
+    case /(🇺🇸)?(美国|us)?/i.test(node_name):
       return "🇺🇸 United States";
     default:
       return "Other";
