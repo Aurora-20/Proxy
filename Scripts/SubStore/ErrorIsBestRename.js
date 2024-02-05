@@ -1,10 +1,10 @@
-function operator(proxies) {
+function operator(proxies = []) {
   const result = proxies.filter((proxy) => filter_node(proxy.name));
 
   result.forEach((proxy) => {
     let name = proxy.name;
     name = get_node_name(name) + " " + get_node_order(name);
-    proxy.name = $argument.prefix + " " + name;
+    proxy.name = $arguments.prefix + " " + name;
   });
 
   return result;
@@ -48,3 +48,7 @@ function get_node_order(node_name = "") {
       return "S";
   }
 }
+
+const arr = [{ name: "美国2" }, { name: "美国4" }, { name: "美国4" }];
+
+console.log(operator);
