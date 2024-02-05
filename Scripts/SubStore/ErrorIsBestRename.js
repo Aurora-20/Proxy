@@ -48,7 +48,3 @@ function get_node_order(node_name = "") {
       return "S";
   }
 }
-
-const arr = [{ name: "美国2" }, { name: "美国4" }, { name: "美国4" }];
-
-console.log(operator);
