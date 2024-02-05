@@ -20,25 +20,25 @@ function filter_node(node_name = "") {
 
 function get_node_name(node_name = "") {
   switch (true) {
-    case /(🇭🇰)?(香港|HK|HongKong)?/.test(node_name):
+    case /(🇭🇰)?(香港|HK|HongKong)/.test(node_name):
       return "🇭🇰 Hong Kong";
-    case /(🇯🇵)?(日本|JP|Japan)?/.test(node_name):
+    case /(🇯🇵)?(日本|JP|Japan)/.test(node_name):
       return "🇯🇵 Japan";
-    case /(🇹🇼|🇨🇳)?(台湾|TW|Taiwan)?/.test(node_name):
+    case /(🇹🇼|🇨🇳)?(台湾|TW|Taiwan)/.test(node_name):
       return "🇹🇼 Taiwan";
-    case /(🇸🇬)?(新加坡|SG|Singapore)?/.test(node_name):
+    case /(🇸🇬)?(新加坡|SG|Singapore)/.test(node_name):
       return "🇸🇬 Singapore";
-    case /(🇺🇸)?(美国|USA?)?/.test(node_name):
+    case /(🇺🇸)?(美国|USA?)/.test(node_name):
       return "🇺🇸 United States";
-    case /(🇰🇷)?(韩国|KR)?/.test(node_name):
+    case /(🇰🇷)?(韩国|KR)/.test(node_name):
       return "🇰🇷 Korea";
-    case /(🇬🇧)?(GB|UK|英国)?/.test(node_name):
+    case /(🇬🇧)?(GB|UK|英国)/.test(node_name):
       return "🇬🇧 United Kingdom";
-    case /(🇫🇷)?(法国|FR)?/.test(node_name):
+    case /(🇫🇷)?(法国|FR)/.test(node_name):
       return "🇫🇷 France";
-    case /(🇩🇪)?(德国|DE)?/.test(node_name):
+    case /(🇩🇪)?(德国|DE)/.test(node_name):
       return "🇩🇪 Germany";
-    case /(🇮🇳)?(印度|IND?)?/.test(node_name):
+    case /(🇮🇳)?(印度|IND?)/.test(node_name):
       return "🇮🇳 India";
     default:
       return "Other";
