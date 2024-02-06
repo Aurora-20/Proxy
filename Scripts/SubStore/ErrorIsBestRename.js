@@ -40,6 +40,14 @@ function get_node_name(node_name = "") {
       return "🇩🇪 Germany";
     case /(🇮🇳)?(印度|IND?)/.test(node_name):
       return "🇮🇳 India";
+    case /(🇺🇦)?(乌克兰|UA|UKR)/.test(node_name):
+      return "🇺🇦 Ukraine";
+    case /(🇺🇦)?(乌克兰|UA|UKR)/.test(node_name):
+      return "🇺🇦 Ukraine";
+    case /(🇷🇺)?(俄罗斯|RUS?)/.test(node_name):
+      return "🇷🇺 Russia";
+    case /(🇹🇷)?(土耳其|TR)/.test(node_name):
+      return "🇹🇷 Turkey";
     default:
       return "Other";
   }
