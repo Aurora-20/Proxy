@@ -18,6 +18,10 @@ function filter_node(node_name = "") {
   return !reg.test(node_name);
 }
 
+function get_node_info(node_name = "") {
+  return node_name;
+}
+
 function get_node_name(node_name = "") {
   switch (true) {
     case /(🇭🇰)?(香港|HK|HongKong)/.test(node_name):
