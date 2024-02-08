@@ -50,6 +50,12 @@ function get_node_name(node_name = "") {
       return "🇹🇷 Turkey";
     case /(🇪🇸)?(西班牙|ESP?)/.test(node_name):
       return "🇪🇸 Spain";
+    case /(🇦🇹)?(奥地利|AU?T)/.test(node_name):
+      return "🇦🇹 Austria";
+    case /(🇮🇹)?(意大利|ITA?)/.test(node_name):
+      return "🇮🇹 Italy";
+    case /(🇮🇪)?(爱尔兰|IE|IRL)/.test(node_name):
+      return "🇮🇪 Ireland";
     default:
       return "Other";
   }
