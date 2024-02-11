@@ -2,23 +2,27 @@
 DOMAIN-KEYWORD,y.aca.b
 DOMAIN-KEYWORD,n.aca.b
 # PiliPili
-DOMAIN-KEYWORD,pilipiliultra.t
-DOMAIN-KEYWORD,pilipiliultra.c
+DOMAIN-KEYWORD,piliultra.t
+DOMAIN-KEYWORD,piliultra.c
 # TreeDiagiam
 DOMAIN-KEYWORD,9.123456.a
 # Paul 
-DOMAIN-KEYWORD,imetyou.t
-# PornEmby(San Jose,Seattle,Los Angeles), 推荐美西
+DOMAIN-KEYWORD,metyou.t
+# PornEmby(San Jose, Seattle, Los Angeles), 推荐美西
 DOMAIN-KEYWORD,ornemby.c
 # Error is Best 
 DOMAIN-KEYWORD,d.prisms.c
 # CCEmby
-DOMAIN-KEYWORD,ccemby.t
-DOMAIN-KEYWORD,carryz.n
+DOMAIN-KEYWORD,cemby.t
+DOMAIN-KEYWORD,arryz.n
 # Acemby
 DOMAIN-KEYWORD,c.zox.s
 # ntRRR
 DOMAIN-KEYWORD,m.ntrrr.t
+# Peach
+DOMAIN-KEYWORD,eachmv.m
+IP-CIDR,141.147.166.96/28,no-resolve
+
 
 # 主要是处理 HTTP 请求
 # Fileball
